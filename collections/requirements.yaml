@@ -1,8 +1,11 @@
 ---
 collections:
-  - redhat.satellite
-  - redhat.insights
-  - ansible.tower
-  - amazon.aws
-  - redhat_cop.tower_configuration
-  #https://github.com/theforeman/foreman-ansible-modules
+- community.general
+- community.postgresql
+- community.mysql
+- community.vmware  
+# - redhat.satellite
+- ansible.netcommon
+- ansible.posix
+- ansible.utils
+- ansible.windows
