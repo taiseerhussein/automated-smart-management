@@ -72,7 +72,7 @@ EXAMPLES = '''
     operatingsystem: "operatingsystem_name"
     medium: "media_name"
     ptable: "Partition_table_name"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -92,7 +92,7 @@ EXAMPLES = '''
     medium: "updated_media_name"
     ptable: "updated_Partition_table_name"
     root_pass: "password"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -124,7 +124,7 @@ EXAMPLES = '''
 - name: "Delete a Hostgroup"
   redhat.satellite.hostgroup:
     name: "new_hostgroup"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: absent

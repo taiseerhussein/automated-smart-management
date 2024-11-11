@@ -194,7 +194,7 @@ satellite_content:
         type: 'erratum'
         inclusion: True
 [user@desktop ~]$ cat playbook.yml
-- hosts: satellite.example.com
+- hosts: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
   vars_files:
     - sample_vars.yml
   roles:

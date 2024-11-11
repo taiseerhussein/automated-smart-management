@@ -154,7 +154,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: A New Job Template
     state: present
     template: |
@@ -174,7 +174,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: a new job template
     file_name: timeywimey_template.erb
     template_inputs:
@@ -190,7 +190,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: a new job template
     template_inputs: []
     state: present
@@ -203,7 +203,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: timeywimey
     state: absent
 
@@ -211,7 +211,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     file_name: timeywimey_template.erb
     name: Wibbly Wobbly Template
     state: present
@@ -226,7 +226,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     file_name: "{{ item }}"
     state: present
     locations:
@@ -239,7 +239,7 @@ EXAMPLES = '''
 # If the templates are stored locally and the ansible module is executed on a remote host
 - name: Ensure latest version of all your Job Templates
   redhat.satellite.job_template:
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -253,7 +253,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "*"
     state: absent
 
@@ -261,7 +261,7 @@ EXAMPLES = '''
   redhat.satellite.job_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "*"
     state: present
     organizations:

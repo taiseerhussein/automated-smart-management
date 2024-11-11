@@ -146,7 +146,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_filter:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "package filter 1"
     organization: "Default Organization"
     content_view: Web Servers
@@ -157,7 +157,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_filter:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "package filter 1"
     organization: "Default Organization"
     content_view: Web Servers

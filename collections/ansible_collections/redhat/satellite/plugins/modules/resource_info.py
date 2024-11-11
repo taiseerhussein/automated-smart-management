@@ -66,7 +66,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     resource: settings
     search: name = foreman_url
   register: result
@@ -77,7 +77,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     resource: registries
   register: result
 - debug:
@@ -88,7 +88,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     resource: organizations
     full_details: true
   register: result
@@ -99,7 +99,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     resource: subscriptions
     params:
       organization_id: 1
@@ -111,7 +111,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     resource: activation_keys
     organization: ACME
   register: result

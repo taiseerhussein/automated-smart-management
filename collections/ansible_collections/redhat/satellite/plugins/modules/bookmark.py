@@ -60,7 +60,7 @@ EXAMPLES = '''
   redhat.satellite.bookmark:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "recent"
     controller: "job_invocations"
     query: "started_at > '24 hours ago'"
@@ -70,7 +70,7 @@ EXAMPLES = '''
   redhat.satellite.bookmark:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "recent"
     controller: "job_invocations"
     query: "started_at > '12 hours ago'"
@@ -80,7 +80,7 @@ EXAMPLES = '''
   redhat.satellite.bookmark:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "recent"
     controller: "job_invocations"
     state: absent

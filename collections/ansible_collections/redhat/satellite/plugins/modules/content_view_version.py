@@ -77,7 +77,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_version:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     content_view: "CV 1"
     organization: "Default Organization"
     version: "2.0"
@@ -89,7 +89,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_version:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     content_view: "CV 1"
     organization: "Default Organization"
     current_lifecycle_environment: Test
@@ -100,7 +100,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_version:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     content_view: "CV 1"
     organization: "Default Organization"
 
@@ -108,7 +108,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_version:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     content_view: "CV 1"
     organization: "Default Organization"
     lifecycle_environments:
@@ -119,7 +119,7 @@ EXAMPLES = '''
   redhat.satellite.content_view_version:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     content_view: "Web Servers"
     organization: "Default Organization"
     version: "1.0"
@@ -130,7 +130,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     resource: content_views
     search: 'name="Example Content"'
@@ -141,7 +141,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     resource: content_view_versions
     params:

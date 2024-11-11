@@ -62,7 +62,7 @@ EXAMPLES = '''
   redhat.satellite.content_upload:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     src: "my.rpm"
     repository: "Build RPMs"
     product: "My Product"

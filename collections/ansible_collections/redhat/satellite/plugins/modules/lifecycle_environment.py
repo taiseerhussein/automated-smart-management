@@ -59,7 +59,7 @@ EXAMPLES = '''
   redhat.satellite.lifecycle_environment:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Production"
     label: "production"
     organization: "Default Organization"

@@ -126,7 +126,7 @@ EXAMPLES = '''
 
 - name: "Run remote command on a single host once"
   job_invocation:
-    search_query: "name ^ (satellite.example.com)"
+    search_query: "name ^ (ec2-18-117-238-216.us-east-2.compute.amazonaws.com)"
     command: 'ls'
     job_template: "Run Command - SSH Default"
     ssh:

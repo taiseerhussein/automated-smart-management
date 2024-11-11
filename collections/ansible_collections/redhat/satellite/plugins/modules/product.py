@@ -81,7 +81,7 @@ EXAMPLES = '''
   redhat.satellite.product:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Fedora"
     organization: "My Cool new Organization"
     sync_plan: "Fedora repos sync"
@@ -91,7 +91,7 @@ EXAMPLES = '''
   redhat.satellite.product:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "CentOS 7"
     gpg_key: "RPM-GPG-KEY-CentOS7"
     organization: "My Cool new Organization"

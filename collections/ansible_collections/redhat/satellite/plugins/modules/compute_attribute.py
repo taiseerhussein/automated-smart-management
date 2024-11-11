@@ -57,7 +57,7 @@ EXAMPLES = '''
   redhat.satellite.compute_attribute:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     compute_profile: "Test Compute Profile"
     compute_resource: "Test Compute Resource"
     vm_attrs:
@@ -69,7 +69,7 @@ EXAMPLES = '''
   redhat.satellite.compute_attribute:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     compute_profile: "Test Compute Profile"
     compute_resource: "Test Compute Resource"
     vm_attrs:

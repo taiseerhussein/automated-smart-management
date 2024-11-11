@@ -49,7 +49,7 @@ EXAMPLES = '''
   redhat.satellite.setting:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "http_proxy"
     value: "http://localhost:8088"
 
@@ -57,7 +57,7 @@ EXAMPLES = '''
   redhat.satellite.setting:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "http_proxy"
 '''
 

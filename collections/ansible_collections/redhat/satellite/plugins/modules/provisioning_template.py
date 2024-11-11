@@ -99,7 +99,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: A New Finish Template
     kind: finish
     state: present
@@ -119,7 +119,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     file_name: timeywimey_template.erb
     state: present
     locations:
@@ -133,7 +133,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: timeywimey_template
     template: |
       <%#
@@ -145,7 +145,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     file_name: timeywimey_template.erb
     name: Wibbly Wobbly Template
     state: present
@@ -160,7 +160,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     file_name: "{{ item }}"
     state: present
     locations:
@@ -173,7 +173,7 @@ EXAMPLES = '''
 # If the templates are stored locally and the ansible module is executed on a remote host
 - name: Ensure latest version of all Provisioning Community Templates
   redhat.satellite.provisioning_template:
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -187,7 +187,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "*"
     state: absent
 
@@ -195,7 +195,7 @@ EXAMPLES = '''
   redhat.satellite.provisioning_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "*"
     state: present
     organizations:

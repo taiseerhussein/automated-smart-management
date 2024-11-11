@@ -55,7 +55,7 @@ EXAMPLES = '''
   redhat.satellite.host_collection:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Foo"
     description: "Foo host collection for Foo servers"
     organization: "My Cool new Organization"

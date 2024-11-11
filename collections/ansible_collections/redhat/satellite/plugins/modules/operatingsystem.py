@@ -117,7 +117,7 @@ EXAMPLES = '''
   redhat.satellite.operatingsystem:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: Debian
     release_name: stretch
     family: Debian
@@ -131,7 +131,7 @@ EXAMPLES = '''
   redhat.satellite.operatingsystem:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: Centos
     family: Redhat
     major: 7
@@ -142,7 +142,7 @@ EXAMPLES = '''
   redhat.satellite.operatingsystem:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: Debian
     family: Debian
     major: 9

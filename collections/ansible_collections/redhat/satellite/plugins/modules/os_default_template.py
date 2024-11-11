@@ -69,7 +69,7 @@ EXAMPLES = '''
   redhat.satellite.os_default_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     operatingsystem: "CoolOS"
     template_kind: "finish"
     provisioning_template: "CoolOS finish"
@@ -79,7 +79,7 @@ EXAMPLES = '''
   redhat.satellite.os_default_template:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     operatingsystem: "CoolOS"
     template_kind: "finish"
     state: absent

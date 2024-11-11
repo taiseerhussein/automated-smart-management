@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   connection: local
   gather_facts: no
   tasks:
@@ -7,7 +7,7 @@
       redhat.satellite.status_info:
         validate_certs: false
 
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   become: true
 - name: satellite disconnected mode
   import_playbook: satellite_disconnected_mode.yml
@@ -15,7 +15,7 @@
     disconnected_mode: "false"
   when: refresh_satellite_manifest
 
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   connection: local
   gather_facts: no
   vars:
@@ -33,7 +33,7 @@
       register: refresh_async
       when: refresh_satellite_manifest
 
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   become: true
   vars:
     refresh_satellite_manifest: no
@@ -50,7 +50,7 @@
         sleep: 20
       when: refresh_satellite_manifest
 
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   connection: local
   gather_facts: no
   vars:

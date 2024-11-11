@@ -59,7 +59,7 @@
 
   - name: Pull katello-ca-consumer package from satellite server and place under /usr/share/convert2rhel/subscription-manager
     get_url:
-      url: https://satellite.example.com/pub/katello-ca-consumer-latest.noarch.rpm
+      url: https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com/pub/katello-ca-consumer-latest.noarch.rpm
       dest: /usr/share/convert2rhel/subscription-manager/katello-ca-consumer-latest.noarch.rpm
       mode: '0440'
 
@@ -125,4 +125,4 @@
     vars:
       env: "{{ rhel_lifecycle_environment.split('_')[1] }}"
       activation_key: "{{ rhel_lifecycle_environment }}"
-      sat_url: satellite.example.com
+      sat_url: ec2-18-117-238-216.us-east-2.compute.amazonaws.com

@@ -55,7 +55,7 @@ EXAMPLES = '''
   redhat.satellite.location:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "My Cool New Location"
     organizations:
       - "Default Organization"
@@ -66,7 +66,7 @@ EXAMPLES = '''
   redhat.satellite.location:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "My Nested location"
     parent: "My Cool New Location"
     state: present
@@ -76,7 +76,7 @@ EXAMPLES = '''
   redhat.satellite.location:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "My Cool New Location/New nested location"
     state: present
 
@@ -85,7 +85,7 @@ EXAMPLES = '''
   redhat.satellite.location:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "My Cool New Location/New nested location"
     parent: "My Cool New Location/My Nested location"
     state: present

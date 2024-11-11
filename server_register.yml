@@ -4,6 +4,6 @@
   vars:
     env: Dev
     activation_key: undef
-    sat_url: satellite.example.com
+    sat_url: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
   roles:
     - rhsm_register

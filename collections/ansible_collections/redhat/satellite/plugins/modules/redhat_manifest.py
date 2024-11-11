@@ -97,9 +97,9 @@ options:
 '''
 
 EXAMPLES = '''
-- name: Create satellite.example.com Manifest and add 7 sub
+- name: Create ec2-18-117-238-216.us-east-2.compute.amazonaws.com Manifest and add 7 sub
   redhat.satellite.redhat_manifest:
-    name: "satellite.example.com"
+    name: "ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "john-smith"
     password: "changeme"
     pool_id: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -114,9 +114,9 @@ EXAMPLES = '''
     quantity: 10
     path: /root/manifest.zip
 
-- name: Remove all of one subs from satellite.example.com
+- name: Remove all of one subs from ec2-18-117-238-216.us-east-2.compute.amazonaws.com
   redhat.satellite.redhat_manifest:
-    name: satellite.example.com
+    name: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
     username: john-smith
     password: changeme
     pool_id: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

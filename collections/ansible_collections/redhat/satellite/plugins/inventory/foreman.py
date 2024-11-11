@@ -155,14 +155,14 @@ DOCUMENTATION = '''
 EXAMPLES = '''
 # my.foreman.yml
 plugin: redhat.satellite.foreman
-url: https://satellite.example.com
+url: https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com
 user: ansibleinventory
 password: changeme
 host_filters: 'organization="Web Engineering"'
 
 # shortname.foreman.yml
 plugin: redhat.satellite.foreman
-url: https://satellite.example.com
+url: https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com
 user: ansibleinventory
 password: changeme
 hostnames:

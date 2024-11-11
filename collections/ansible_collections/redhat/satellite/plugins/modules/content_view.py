@@ -103,7 +103,7 @@ EXAMPLES = '''
   redhat.satellite.content_view:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Fedora CV"
     organization: "My Cool new Organization"
     repositories:
@@ -114,7 +114,7 @@ EXAMPLES = '''
   redhat.satellite.content_view:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Fedora CCV"
     organization: "My Cool new Organization"
     composite: true

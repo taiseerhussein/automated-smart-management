@@ -51,7 +51,7 @@ EXAMPLES = '''
   redhat.satellite.repository_sync:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     repository: "My repository"
     product: "My Product"
     organization: "Default Organization"

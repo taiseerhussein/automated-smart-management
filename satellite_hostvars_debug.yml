@@ -2,10 +2,10 @@
 - hosts: all
   gather_facts: false
   tasks:
-  - name: Debug hostvars - satellite.example.com
+  - name: Debug hostvars - ec2-18-117-238-216.us-east-2.compute.amazonaws.com
     debug:
-      msg: "{{ hostvars['satellite.example.com'] }}"
+      msg: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com'] }}"
 
   - name: Debug Content View filter - RHEL
     debug:
-      msg: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | list}}"
+      msg: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | list}}"

@@ -70,7 +70,7 @@ tower_templates:
         - question_name: Select Content View
           variable: content_view
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
 
   - name: SATELLITE / CentOS - Publish Content View
@@ -89,7 +89,7 @@ tower_templates:
         - question_name: Select Content View
           variable: content_view
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
 
   - name: SATELLITE / RHEL - Promote Content View
@@ -106,17 +106,17 @@ tower_templates:
         - question_name: Select Content View
           variable: content_view
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Current Lifecycle Environment
           variable: current_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Next Lifecycle Environment
           variable: lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
 
   - name: SATELLITE / CentOS - Promote Content View
@@ -133,17 +133,17 @@ tower_templates:
         - question_name: Select Content View
           variable: content_view
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Current Lifecycle Environment
           variable: current_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Next Lifecycle Environment
           variable: lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true  
 
   - name: SATELLITE / Delete host(s) in "node_group"
@@ -169,12 +169,12 @@ tower_templates:
         - question_name: Select CentOS Lifecycle Environment to transfer nodes from
           variable: centos_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Select target RHEL Lifecycle Environment
           variable: rhel_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
 
   - name: SERVER / RHEL7 - Patch
@@ -193,7 +193,7 @@ tower_templates:
         - question_name: Select Environment
           type: multiplechoice
           variable: lifecycle_stage
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Check
           type: multiplechoice
@@ -219,7 +219,7 @@ tower_templates:
         - question_name: Select Environment
           type: multiplechoice
           variable: lifecycle_stage
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Check
           type: multiplechoice
@@ -316,12 +316,12 @@ tower_templates:
         - question_name: Select CentOS Group to convert
           variable: centos_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^CentOS.*$') | map(attribute='name') | list}}"
           required: true
         - question_name: Select target RHEL Group to convert to
           variable: rhel_lifecycle_environment
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['lifecycle_environments'] | selectattr('name', 'match', '^RHEL.*$') | map(attribute='name') | list}}"
           required: true
 
   - name: CONVERT2RHEL / 96 - Three Tier App deployment
@@ -458,7 +458,7 @@ tower_templates:
         - question_name: Select inventory to update
           variable: content_view
           type: multiplechoice
-          choices: "{{ hostvars['satellite.example.com']['foreman_content_views'] | selectattr('name', 'defined') | map(attribute='name') | list}}"
+          choices: "{{ hostvars['ec2-18-117-238-216.us-east-2.compute.amazonaws.com']['foreman_content_views'] | selectattr('name', 'defined') | map(attribute='name') | list}}"
           required: true
         - question_name: Choose Environment
           type: multiplechoice

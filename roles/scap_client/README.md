@@ -35,7 +35,7 @@ RPM Repositories have to be enabled and containing required packages.
   become_user: root
   become_method: sudo
   vars:
-    satellite_server: satellite.example.com
+    satellite_server: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
     satellite_username`: admin
     satellite_password`: verycomplexpassword
     capsule_server`: capsule.example.com

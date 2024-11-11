@@ -61,7 +61,7 @@ EXAMPLES = '''
   redhat.satellite.host_power:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     hostname: "test-host.domain.test"
     state: on
 
@@ -69,7 +69,7 @@ EXAMPLES = '''
   redhat.satellite.host_power:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     hostname: "test-host.domain.test"
     state: off
 
@@ -77,7 +77,7 @@ EXAMPLES = '''
   redhat.satellite.host_power:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     hostname: "test-host.domain.test"
     state: state
     register: result

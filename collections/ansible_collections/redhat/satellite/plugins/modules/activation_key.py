@@ -153,7 +153,7 @@ EXAMPLES = '''
   redhat.satellite.activation_key:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Clients"
     organization: "Default Organization"
     lifecycle_environment: "Library"

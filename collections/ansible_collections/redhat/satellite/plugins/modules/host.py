@@ -264,7 +264,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     hostgroup: my_hostgroup
     state: present
@@ -273,7 +273,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     hostgroup: my_hostgroup
     build: true
@@ -283,7 +283,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     managed: false
     state: present
@@ -292,7 +292,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     compute_attributes:
       cpus: 2
@@ -303,7 +303,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     compute_attributes:
       start: "1"
@@ -313,7 +313,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     interfaces_attributes:
     - type: "interface"
@@ -327,7 +327,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     interfaces_attributes:
     - type: "interface"
@@ -349,7 +349,7 @@ EXAMPLES = '''
   redhat.satellite.host:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "new_host"
     state: absent
 '''

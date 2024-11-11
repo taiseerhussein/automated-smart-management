@@ -2,11 +2,11 @@
 - hosts: all
   gather_facts: no
   tasks:
-  - name: Dynamically add satellite.example.com to inventory
+  - name: Dynamically add ec2-18-117-238-216.us-east-2.compute.amazonaws.com to inventory
     add_host:
-      name: satellite.example.com
+      name: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
 
-- hosts: satellite.example.com
+- hosts: ec2-18-117-238-216.us-east-2.compute.amazonaws.com
   connection: local
   gather_facts: no
   vars:

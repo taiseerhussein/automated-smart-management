@@ -86,7 +86,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: "Red Hat Enterprise Linux 7 Server (RPMs)"
     organization: "Default Organization"
     product: "Red Hat Enterprise Linux Server"
@@ -105,7 +105,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     label: rhel-7-server-rpms
     repositories:
@@ -123,7 +123,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     name: Red Hat Enterprise Linux 7 Server - Extras (RPMs)
     organization: "Default Organization"
     product: Red Hat Enterprise Linux Server
@@ -135,7 +135,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     label: rhel-8-for-x86_64-baseos-rpms
     repositories:
@@ -145,7 +145,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     label: "rhel-7-server-rhv-4.2-manager-rpms"
     repositories:
@@ -156,7 +156,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     label: "rhel-7-server-rhv-4.2-manager-rpms"
     all_repositories: true
@@ -166,7 +166,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     resource: repository_sets
     search: product_name="Red Hat Virtualization Manager"
@@ -179,7 +179,7 @@ EXAMPLES = '''
   redhat.satellite.resource_info:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     resource: repository_sets
     search: label=rhel-7-server-rhv-4.2-manager-rpms
@@ -192,7 +192,7 @@ EXAMPLES = '''
   redhat.satellite.repository_set:
     username: "admin"
     password: "changeme"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     organization: "Default Organization"
     label: "{{ item.label }}"
     repositories: "{{ item.repositories | default(omit) }}"

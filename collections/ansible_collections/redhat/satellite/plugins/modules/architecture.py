@@ -49,7 +49,7 @@ EXAMPLES = '''
     operatingsystems:
       - "TestOS1"
       - "TestOS2"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -60,7 +60,7 @@ EXAMPLES = '''
     operatingsystems:
       - "TestOS3"
       - "TestOS4"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: present
@@ -68,7 +68,7 @@ EXAMPLES = '''
 - name: "Delete an Architecture"
   redhat.satellite.architecture:
     name: "i386"
-    server_url: "https://satellite.example.com"
+    server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
     username: "admin"
     password: "changeme"
     state: absent

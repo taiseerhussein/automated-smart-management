@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ HOSTS | default('satellite.example.com') }}"
+- hosts: "{{ HOSTS | default('ec2-18-117-238-216.us-east-2.compute.amazonaws.com') }}"
   become: true
   vars:
     disconnected_mode: "true"
