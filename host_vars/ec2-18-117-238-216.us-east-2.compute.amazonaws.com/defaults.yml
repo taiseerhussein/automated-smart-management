@@ -1,0 +1,7 @@
+---
+server_url: "https://ec2-18-117-238-216.us-east-2.compute.amazonaws.com"
+organization: "redhat"
+location: "chicago"
+username: "{{ vault_sat_publisher_username }}"
+password: "{{ vault_sat_publisher_password }}"
+sat_validate_certs: false
