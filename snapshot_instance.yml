@@ -3,9 +3,8 @@
   hosts: ec2-54-86-58-244.compute-1.amazonaws.com
   # connection: local
   gather_facts: no
-  tasks:
-  - name: Take snapshot of instances in region "
-    include_role:
-      name: ec2_node_tools
-    vars:
+  vars:
       ec2_instance_action: "snapshot_create"
+  roles:
+    - ec2_node_tools
+
