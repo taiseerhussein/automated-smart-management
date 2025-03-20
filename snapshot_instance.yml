@@ -4,7 +4,7 @@
   # connection: local
   gather_facts: no
   vars:
-      ec2_instance_action: "snapshot_create"
+    ec2_instance_action: "snapshot_create"
   roles:
     - ec2_node_tools
 
