@@ -1,7 +1,7 @@
 ---
 - name: Take snapshot of instance
   hosts: ec2-52-91-213-25.compute-1.amazonaws.com
-  # connection: local
+  connection: local
   gather_facts: no
   vars:
     ec2_instance_action: "snapshot_create"
