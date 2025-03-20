@@ -9,4 +9,4 @@ collections:
 - ansible.posix
 - ansible.utils
 - ansible.windows
-- amazon.aws.ec2
+- amazon.aws
