@@ -1,6 +1,6 @@
 ---
 - name: Gather information about all instances
-  amazon.aws.ec2_instance_info:
+  ec2_instance_info:
   register: instances
 
 - name: Format instance selection tags for ec2_remote_info
