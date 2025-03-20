@@ -1,6 +1,6 @@
 ---
 - name: Take snapshot of instance
-  hosts: ec2-54-86-58-244.compute-1.amazonaws.com
+  hosts: ec2-52-91-213-25.compute-1.amazonaws.com
   # connection: local
   gather_facts: no
   vars:
