@@ -2,7 +2,10 @@
 - name: Gather information about all instances
   ec2_instance_info:
   register: instances
-
+- name: Prints two lines of messages, but only if there is an environment value set
+  ansible.builtin.debug:
+    msg: {{ instance }}
+    
 - name: Format instance selection tags for ec2_remote_info
   command: python3 roles/ec2_node_tools/files/build_tags_dict.py "{{instances.tags}}"
   delegate_to: localhost
